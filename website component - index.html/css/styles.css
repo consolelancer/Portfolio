@@ -22,6 +22,7 @@ body{
 	border-radius:0;
 	border: 0;
 	height:100%;
+  margin: 0;
 }
 
 .halfCircleBottom{
@@ -33,7 +34,8 @@ body{
      border-bottom-right-radius: 5em 5em;
 border-bottom-left-radius: 5em 5em; 
      
-     background:green;
+     background:linear-gradient(#cc66ff, #9966ff);
+     opacity: 0.8;
      box-shadow: -1px -1px 10px -2px rgba(0, 0, 0, 0.5);
 
 }
@@ -41,11 +43,11 @@ border-bottom-left-radius: 5em 5em;
   float: left;
   padding: 12px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 15px;
 }
 
 .navbar a:hover {
-  background-color: #000;
+  background-color:linear-gradient(#cc66ff, #9966ff);
 }
 
 
@@ -55,8 +57,7 @@ border-bottom-left-radius: 5em 5em;
 
 #main-contain{
 	margin-top: 0;
-  border:solid white;
-  border-width: 5px;
+  
 
 /*
 
@@ -174,5 +175,16 @@ border-bottom-left-radius: 5em 5em;
     padding-top: 10px;
     height: 80px;
   }
+  .halfCircleBottom{
+    position: relative; 
+    left: 50%;
+    transform: translateX(-50%);
+    height:45px;
+    width:200px;
+    border-bottom-right-radius: 5em 5em;
+    border-bottom-left-radius: 5em 5em; 
+    background:linear-gradient(#cc66ff, #9966ff);
+    opacity: 0.8;
+    box-shadow: -1px -1px 10px -2px rgba(0, 0, 0, 0.5);
  
  }
