@@ -15,6 +15,7 @@ body{
     top: 0;
     text-align: center;
     margin: auto;
+    
 }
  
 #header-nav {
@@ -29,46 +30,55 @@ body{
 	position: relative; 
 	left: 50%;
 	transform: translateX(-50%);
-	height:45px;
-     width:200px;
-     border-bottom-right-radius: 5em 5em;
-border-bottom-left-radius: 5em 5em; 
-     
-     background:linear-gradient(#cc66ff, #9966ff);
-     opacity: 0.8;
-     box-shadow: -1px -1px 10px -2px rgba(0, 0, 0, 0.5);
+	height:50px;
+  width:200px;
+  border-bottom-right-radius: 5em 5em;
+  border-bottom-left-radius: 5em 5em; 
+  background:linear-gradient(#cc66ff, #9966ff);
+  opacity: 0.8;
+  box-shadow: -1px -1px 10px -2px rgba(0, 0, 0, 0.5);
 
 }
 .navbar a {
   float: left;
   padding: 12px;
   text-decoration: none;
-  font-size: 15px;
+  
+
 }
 
 .navbar a:hover {
   background-color:linear-gradient(#cc66ff, #9966ff);
 }
 
+.navbar-toggle{
+  background-color: black;
+}
 
+#nav-list {
+  padding-top: 0;
 
+}
+#nav-list a {
+  color: black;
+  text-align: center; 
+}
+#nav-list a:hover {
+   background:linear-gradient(#cc66ff, #9966ff);
+   border-radius: 30px;
+   opacity: 0.3;
+   text-decoration-color: white;
+}
+
+#nav-list a span {
+  font-size: 1.2em;
+}
 
 /*caraousel designing*/
 
 #main-contain{
 	margin-top: 0;
-  
-
-/*
-
-	width: 45%;*/
-	/* border-style: solid;
-  border-width: thick;
-  border-color: red;
-  border-radius: 10px;*/
-
 }
-
 .col-12.col-sm-6.container{
 	padding: 0;
 	
@@ -76,7 +86,7 @@ border-bottom-left-radius: 5em 5em;
 .vertical .carousel-inner {
 	padding: 0;
   height: 100%;
- 
+  z-index: 2;
  }
 
 .carousel.vertical .next.left,
@@ -100,6 +110,7 @@ border-bottom-left-radius: 5em 5em;
 .btn{
 	padding: 0;
 	border:0;
+   z-index: 3;
 }
 
 .dot {
@@ -111,6 +122,7 @@ border-bottom-left-radius: 5em 5em;
   margin-left:-90px;
   margin-top: 280px;
   opacity: 0.5;
+  z-index: 1;
 }
 .dot2 {
   position: absolute;
@@ -143,6 +155,14 @@ border-bottom-left-radius: 5em 5em;
 
 /********** Small devices only **********/
 @media (min-width: 768px) and (max-width: 991px) {
+
+  #nav-list a {
+  color: black;
+  text-align: center; 
+   font-size: 12px;
+   padding: 10px;
+}
+
   /*temprary*/
 .dot {
   position: absolute;
@@ -179,12 +199,34 @@ border-bottom-left-radius: 5em 5em;
     position: relative; 
     left: 50%;
     transform: translateX(-50%);
-    height:45px;
+    height:50px;
     width:200px;
     border-bottom-right-radius: 5em 5em;
     border-bottom-left-radius: 5em 5em; 
     background:linear-gradient(#cc66ff, #9966ff);
     opacity: 0.8;
     box-shadow: -1px -1px 10px -2px rgba(0, 0, 0, 0.5);
- 
- }
+  }
+
+  .dot {
+  position: absolute;
+ background: linear-gradient(#cc66ff, #9966ff);
+ height:120px;
+  width:120px;
+ border-radius: 120px;
+  margin-left:-60px;
+  margin-top: 130px;
+  opacity: 0.5;
+}
+/*temprary*/
+.dot2 {
+  position: absolute;
+ background: linear-gradient(#cc66ff, #9966ff);
+ height:80px;
+  width:80px;
+ border-radius: 90px;
+  margin-left:-120px;
+  margin-top: 180px;
+  opacity: 0.5;
+}
+}
