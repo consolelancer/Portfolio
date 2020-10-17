@@ -30,8 +30,13 @@ mix-blend-mode: darken;
 
      
 }
+.circle h2{
+  font-family: "Sofia";
+  z-index: 3;
+
+}
 .circle p{
-  font-size: 1rem;
+  font-size: 1.1rem;
   z-index: 3;
 }
 
